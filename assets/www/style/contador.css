@@ -1,0 +1,62 @@
+#contador{
+	font-size: 0pt;
+	letter-spacing: 1em;
+	border-bottom: 1px solid #ddd;
+	margin: 0;
+	text-align:center;
+}
+
+#container {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	color: #555;
+	
+}
+
+#countdown_dashboard {
+	position:relative;
+    top:0px;
+	margin:auto;
+	margin-top:10px;
+	width: 100%;
+	height: 100%;
+	bottom:0px;
+    left:0;
+}
+
+.dash {
+	width: 22%;
+	height: 2%;
+	float: left;
+	margin-left: 6px;
+	position: relative;
+}
+
+.dash .digit {
+
+	font-size: 200%;
+	font-weight: bold;
+	float: left;
+	width: 50%;
+	text-align: left;
+	font-family: Times;
+	color: blue;
+	position: relative;
+}
+
+.dash_title {
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	right: 0px;
+	top:100%;
+	font-size: 50%;
+	color: #555;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+
+

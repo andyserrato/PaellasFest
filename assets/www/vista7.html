@@ -1,0 +1,282 @@
+﻿<!-- Copyright 2014 GroupDinamizadores-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1, width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=3, user-scalable=1"> -->
+    <title>PaellasFest!</title>
+
+ 	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="index.css" /> 
+	
+	
+	
+    <script src="jquery.mobile/jquery-1.7.2.min"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.2.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="index.js"></script>
+	
+
+  
+	<!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
+	<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+	<!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
+	
+	</head>
+  
+  <body onload="init();">
+	<div data-role="page" id="home" class="type-interior" data-theme="e">
+		<div data-role="header" data-theme="b" id="header">
+			<!-- <h1><span style="color:#7AC5E1">Paellas<span style="color:#DC9908">FEST!</span></h1> -->
+			<h1><img src="jquery.mobile/images/logoTopBarLetras.png" height="80%" width="35%"></h1>
+			<a href="#" data-icon="home" data-iconpos="notext" id="intro" class="ui-btn-left">intro</a>
+			<a href="#navpanel" data-icon="bars" data-iconpos="left" id="bars-button" class="ui-btn-right">Menú</a>
+		</div>
+		
+		
+		<div data-role="content" data-theme="c">			
+			<div class="content-secondary">
+				
+			</div>	
+			
+			<div data-role="panel" id="navpanel" data-theme="b" data-display="overlay" data-position="right"><!--data-role="navbar" data-iconpos="left" data-theme="e" class="ui-lista">-->
+					<div data-role="controlgroup" data-corners="false">
+						<a href="vista.html" data-role="button"  data-icon="comment" id="click-accelerometer" data-transition="slidefade" data-direction="reverse">Qué es PaellasFEST!</a>
+						<a href="vista2.html" data-role="button" data-icon="star" id="click-camera" data-transition="slidefade" data-direction="reverse">Artistas</a>
+						<a href="vista3.html" data-role="button" data-icon="tag" id="click-capture" data-transition="slidefade" data-direction="reverse">Pulseras</a>
+						<a href="vista4.html" data-role="button" data-icon="location" id="click-compass" data-transition="slidefade" data-direction="reverse">Localización</a>
+						<a href="vista6.html" data-role="button" data-icon="eye" id="click-feed" data-transition="slidefade" data-direction="reverse">Plano + Cartel</a>
+						<a href="vista5.html" data-role="button" data-icon="info" id="click-connection" data-transition="slidefade" data-direction="reverse">Debes saber</a>
+						<a href="vista7.html" data-role="button" data-icon="edit" id="click-connection" data-transition="slidefade" data-direction="reverse">Twitter</a>
+						<a href="http://profesionales.tivenkia.com/clientes/519/0/0/ea99e7db5211e49a35588e1ef2fbf6e5" data-role="button" data-icon="action" id="click-connection" data-transition="slidefade" data-direction="reverse">Comprar entradas</a>
+						<a href="https://www.youtube.com/watch?v=yvikbhY2QTw" data-role="button" data-icon="video" id="click-connection" data-transition="slidefade" data-direction="reverse">PaellasFEST! PROMO</a>
+					</div>
+		</div>
+		
+			<div class="content-primary">
+				<div class="api-div" id="api-intro">
+				
+					<div class="api-div" id="api-connection">
+				<script>$('#tt').trigger('create');</script>
+								
+				<div id="tt" style="height:100% width: 100%">
+					<a class="twitter-timeline"  href="https://twitter.com/search?q=%23paellasfest"  data-widget-id="457479529959682048">Tweets sobre "#paellasfest"</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+					</div>
+			</div>
+					<div id="pie">
+						<br />Visita <a href="http://www.paellasfest.es" style="text-decoration:none"><strong>www.paellasfest.com</strong></a> para más info.
+						<br/>
+						<p id="copyright">&copy; Copyright 2014 GroupDinamizadores</p>
+					</div>		    					
+			</div>
+			
+				<!--<div class="api-div" id="api-contacts">
+					<h2>Contacts</h2>
+					<blockquote>
+						<p>The <code>contacts</code> object provides access to the device contacts database.</p>
+					</blockquote>
+					<div data-role="button" onclick="get_contacts();">Check Contacts</div>
+					<div id="contacts-output"></div>
+				</div>
+
+				<div class="api-div" id="api-device">
+					<h2>Device</h2>
+					<blockquote>
+						<p>The <code>device</code> object describes the device's hardware and software.</p>
+					</blockquote>
+					<h4><strong>Important</strong> Access <code>device</code> object only after <code>deviceready</code> event.</h4>
+					<table id="deviceinfo">
+						<tr>
+							<th>Device</th>
+							<th class="alt">Value</th>
+						</tr>
+						<tr>
+							<td>Name</td>
+							<td class="alt"><strong id="name">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>Platform</td>
+							<td class="alt"><strong id="platform">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>PhoneGap Version</td>
+							<td class="alt"><strong id="pgversion">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>UUID</td>
+							<td class="alt"><strong id="uuid">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>OS Version</td>
+							<td class="alt"><strong id="version">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<th>Screen</th>
+							<th class="alt">Value</th>
+						</tr>
+						<tr>
+							<td>Width</td>
+							<td class="alt"><strong id="width">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>Height</td>
+							<td class="alt"><strong id="height">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>Available Width</td>
+							<td class="alt"><strong id="availwidth">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>Available Height</td>
+							<td class="alt"><strong id="availheight">&nbsp;</strong></td>
+						</tr>
+						<tr>
+							<td>Color Depth</td>
+							<td class="alt"><strong id="colorDepth">&nbsp;</strong></td>
+						</tr> 					
+					</table>							
+				</div>
+
+				<div class="api-div" id="api-events">
+					<h2>Events</h2>
+					<blockquote>
+						<p>PhoneGap lifecycle events.</p>
+					</blockquote>
+					<h4 class="help">Tap device (or virtual device) <code>menu</code> or <code>search</code> buttons to see example callback output.</h4>
+					<span id="eventOutput"></span>
+					<h4>Other <code>event</code> example callbacks use console.log</h4>								
+				</div>
+
+				<div class="api-div" id="api-file">
+					<h2>File</h2>
+					<blockquote>
+						<p>An API to read, write and navigate file system hierarchies.</p>
+					</blockquote>
+					<div id="file-system-text"></div>
+					<fieldset class="ui-grid-a">				
+						<div class="ui-block-a">
+							<div data-role="button" onclick="createFile();">Create</div>
+						</div>
+						<div class="ui-block-b">
+							<div data-role="button" onclick="writeFile();">Write</div>
+						</div>
+						<span id="file-status">Status:</span>
+						<span id="file-contents"></span>
+					</fieldset>
+					<fieldset class="ui-grid-a">				
+						<div class="ui-block-a">
+							<div data-role="button" onclick="readFile();">Read</div>
+						</div>
+						<div class="ui-block-b">
+							<div data-role="button" onclick="removeFile();">Remove</div>
+						</div>
+						Read text: <span id="file-read-text"></span><br/>
+						Data Url: <span id="file-read-dataurl"></span>
+					</fieldset>
+				</div>
+
+				<div class="api-div" id="api-geolocation">
+					<h2>Geolocation</h2>
+					<blockquote>
+						<p>The <code>geolocation</code> object provides access to the device's GPS sensor.</p>
+					</blockquote>
+					<h4 class="help"><b>Toggle</b> to stop/start
+					geolocation watch. <br/><b>Get Current</b> for one-time geolocation reading.</h4>
+					<div class="ui-grid-a">
+						<div class="ui-block-a"><div data-role="button" onclick="toggleWatchPosition();">Toggle</div></div>
+						<div class="ui-block-b"><div data-role="button" onclick="getCurrentPosition();">Get Current</div></div>
+					</div>
+					<div id="cur_position"></div>
+					<img id="map"/>								
+				</div>
+
+				<div class="api-div" id="api-media">
+					<h2>Media</h2>
+					<blockquote>
+						<p>The <code>Media</code> object provides the ability to record and play back audio files on a device. </p>
+					</blockquote>
+					<b>Play MP3 Song</b>
+					<div data-role="controlgroup" data-type="horizontal">				
+						<div data-role="button" id="playaudio" class="wider-btn" data-theme="b">&nbsp;Play&nbsp;</div>
+						<div data-role="button" id="pauseaudio" class="wider-btn" data-theme="b">Pause</div>
+						<div data-role="button" id="stopaudio" class="wider-btn" data-theme="b">&nbsp;Stop&nbsp;</div>	
+					<div class="ui-grid-a">
+						<div class="ui-block-a"> Current: <span id="audio_position">0 sec</span></div>
+						<div class="ui-block-b">Total: <span id=media_dur>0</span> sec</div>
+					</div>
+					</div>
+					<b>Live Audio Recording (5 sec)</b>
+					<div data-role="controlgroup" data-type="horizontal">	
+						<div data-role="button" id="startRecord" class="wider-btn" data-theme="b">Record Audio</div>
+						<div data-role="button" id="playbackRecord" class="wider-btn" data-theme="b">&nbsp;Playback&nbsp;</div>
+					<div class="ui-grid-a">
+						<div class="ui-block-a">Status: <span id="record-status"></span></div>
+						<div class="ui-block-b"><span id="record-time"></span></div>
+					</div>
+					</div>
+				</div>
+
+				<div class="api-div" id="api-notification">
+					<h2>Notification</h2>
+					<blockquote>
+						<p>Visual, audible, and tactile device notifications.</p>
+					</blockquote>
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a"><button onclick="showAlert();" data-theme="c" data-icon="alert">Alert</button></div>
+						<div class="ui-block-b"><button onclick="showConfirm();" data-theme="c" data-icon="check">Confirm</button></div>	   
+					</fieldset>				
+					<fieldset class="ui-grid-a">
+						<div class="ui-block-a"><button onclick="beep();" data-theme="b">Beep</button></div>
+						<div class="ui-block-b"><button onclick="vibrate();" data-theme="b">Vibrate</button></div>	   
+					</fieldset>				
+				</div>
+
+				<div class="api-div" id="api-storage">
+					<h2>Storage</h2>
+					<blockquote>
+						<p>Provides access to the devices storage options.</p>
+					</blockquote>
+					<h4 class="help">Based on <strong>W3C Web SQL Database Spec</strong> and <strong>W3C Web Storage API Spec</strong></h4>							
+					<div data-role="controlgroup">
+						<div data-role="button" onclick="createDB();">Create DB</div>
+						<div data-role="button" onclick="getSqlResultSet();">SQL Result Set</div>
+						<div class="ui-grid-a">
+						SQL Result: <br/><span id="sql-result"></span><br/>
+						</div>
+					</div>
+					
+					<div data-role="controlgroup">
+						<div data-role="button" onclick="writeLocalStorage();">Write LocalStorage</div>
+						<div data-role="button" onclick="readLocalStorage();">Read LocalStorage</div>
+						<div data-role="button" onclick="removeItemLocalStorage();">Remove Item</div>
+						<div class="ui-grid-a">
+						Local Storage: <span id="local-storage-result"></span><br/>
+						</div>
+					</div>-->
+				</div>
+
+			</div>
+		</div>
+	<div data-role="footer" data-position="fixed" class="footer-docs" data-theme="b">
+		<p>&copy;Copyright 2014 GroupDinamizadores</p>
+	</div>	
+	</div>	
+	<script type="text/javascript" charset="utf-8" src="apis/accelerometer.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/compass.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/connection.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/contacts.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/device.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/events.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/geolocation.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/media.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/notification.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/storage.js"></script> 			
+  </body>
+</html>

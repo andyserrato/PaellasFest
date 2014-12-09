@@ -1,0 +1,68 @@
+<!-- Copyright 2014 GroupDinamizadores-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1, width=device-width">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=3, user-scalable=1">
+    <title>PaellasFest!</title>
+
+ 	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="index.css" /> 
+	
+	
+
+    <script src="jquery.mobile/jquery-1.7.2.min"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.2.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="index.js"></script>
+  
+	</head>
+  <body onload="init();">
+	<div data-role="page" id="home" class="type-interior" data-theme="e">
+		<div data-role="header" data-theme="b" id="header">
+		<h1><img src="jquery.mobile/images/logoTopBarLetras.png" height="80%" width="35%"></h1>
+			<!-- <h1><span style="color:#7AC5E1">Paellas<span style="color:#DC9908">FEST!</span></h1> -->
+			<a href="index.html" data-icon="home" data-iconpos="notext" id="intro" class="ui-btn-left">intro</a>
+			<a href="#navpanel" data-icon="bars" data-iconpos="left" id="bars-button" class="ui-btn-right">Menú</a>
+		</div>
+		
+		<div data-role="content" data-theme="c">			
+			<div class="content-secondary">
+				
+			</div>	
+			
+			<div data-role="panel" id="navpanel" data-theme="b" data-display="overlay" data-position="right">
+					<div data-role="controlgroup" data-corners="false">
+						<a href="vista.html" data-role="button"  data-icon="comment" id="click-accelerometer" data-transition="slidefade" data-direction="reverse">Qué es PaellasFEST!</a>
+						<a href="vista2.html" data-role="button" data-icon="star" id="click-camera" data-transition="slidefade" data-direction="reverse">Artistas</a>
+						<a href="vista3.html" data-role="button" data-icon="tag" id="click-capture" data-transition="slidefade" data-direction="reverse">Pulseras</a>
+						<a href="vista4.html" data-role="button" data-icon="location" id="click-compass" data-transition="slidefade" data-direction="reverse">Localización</a>
+						<a href="vista6.html" data-role="button" data-icon="eye" id="click-feed" data-transition="slidefade" data-direction="reverse">Plano + Cartel</a>
+						<a href="vista5.html" data-role="button" data-icon="info" id="click-connection" data-transition="slidefade" data-direction="reverse">Debes saber</a>
+						<a href="vista7.html" data-role="button" data-icon="edit" id="click-connection" data-transition="slidefade" data-direction="reverse">Twitter</a>
+						<a href="http://profesionales.tivenkia.com/clientes/519/0/0/ea99e7db5211e49a35588e1ef2fbf6e5" data-role="button" data-icon="action" id="click-connection" data-transition="slidefade" data-direction="reverse">Comprar entradas</a>
+						<a href="https://www.youtube.com/watch?v=yvikbhY2QTw" data-role="button" data-icon="video" id="click-connection" data-transition="slidefade" data-direction="reverse">PaellasFEST! PROMO</a>
+					</div>
+		</div>
+
+			<div class="content-primary">
+
+				<div>
+					
+					
+					</div>
+					<div>
+					<img id="plano" src="jquery.mobile/images/plano-recinto.jpg" height="100%" width="100%">
+					</div>
+					<div>
+					<img src="jquery.mobile/images/foto4.jpg" height="100%" width="100%">
+					</div>
+				
+		</div>
+		<div id="pie">
+						<p id="copyright">&copy; Copyright 2014 GroupDinamizadores</p>
+					</div>
+	</div>
+  </body>
+  </html>

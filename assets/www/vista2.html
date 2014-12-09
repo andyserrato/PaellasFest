@@ -1,0 +1,383 @@
+﻿<!-- Copyright 2014 GroupDinamizadores-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1, width=device-width">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=3, user-scalable=1">
+    <title>PaellasFest!</title>
+
+ 	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="index.css" /> 
+
+    <script src="jquery.mobile/jquery-1.7.2.min"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.2.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="index.js"></script>
+  
+	<!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
+	<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+	<!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
+	</head>
+  <body onload="init();">
+	<div data-role="page" id="home" class="type-interior" data-theme="e">
+		<div data-role="header" data-theme="b" id="header">
+			<h1><img src="jquery.mobile/images/logoTopBarLetras.png" height="80%" width="35%"></h1>
+			<!-- <h1><span style="color:#7AC5E1">Paellas<span style="color:#DC9908">FEST!</span></h1> -->
+			<a href="index.html" data-icon="home" data-iconpos="notext" id="intro" class="ui-btn-left">intro</a>
+			<a href="#navpanel" data-icon="bars" data-iconpos="left" id="bars-button" class="ui-btn-right">Menú</a>
+		</div>
+		
+		<div data-role="content" data-theme="c">			
+			<div class="content-secondary">
+				
+			</div>	
+			
+			<div data-role="panel" id="navpanel" data-theme="b" data-display="overlay" data-position="right">
+					<div data-role="controlgroup" data-corners="false">
+						<a href="vista.html" data-role="button"  data-icon="comment" id="click-accelerometer" data-transition="slidefade" data-direction="reverse">Qué es PaellasFEST!</a>
+						<a href="vista2.html" data-role="button" data-icon="star" id="click-camera" data-transition="slidefade" data-direction="reverse">Artistas</a>
+						<a href="vista3.html" data-role="button" data-icon="tag" id="click-capture" data-transition="slidefade" data-direction="reverse">Pulseras</a>
+						<a href="vista4.html" data-role="button" data-icon="location" id="click-compass" data-transition="slidefade" data-direction="reverse">Localización</a>
+						<a href="vista6.html" data-role="button" data-icon="eye" id="click-feed" data-transition="slidefade" data-direction="reverse">Plano + Cartel</a>
+						<a href="vista5.html" data-role="button" data-icon="info" id="click-connection" data-transition="slidefade" data-direction="reverse">Debes saber</a>
+						<a href="vista7.html" data-role="button" data-icon="edit" id="click-connection" data-transition="slidefade" data-direction="reverse">Twitter</a>
+						<a href="http://profesionales.tivenkia.com/clientes/519/0/0/ea99e7db5211e49a35588e1ef2fbf6e5" data-role="button" data-icon="action" id="click-connection" data-transition="slidefade" data-direction="reverse">Comprar entradas</a>
+						<a href="https://www.youtube.com/watch?v=yvikbhY2QTw" data-role="button" data-icon="video" id="click-connection" data-transition="slidefade" data-direction="reverse">PaellasFEST! PROMO</a>
+					</div>
+		</div>
+
+			<div class="content-primary">
+
+				<div class="api-div" id="api-camera">
+					<h2>ARTISTAS DEL FESTIVAL</h2>
+					
+					<div data-role="collapsibleset" >
+						<div data-role="collapsible" class="mainstage" >
+							<h2><span style="color:white;">MAIN STAGE</span></h2>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/THEZOMBIEKIDS.jpg">
+									<h3>The Zombie Kids</h3>
+									<p>Estilo: Dubstep</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/DJNANO.jpg">
+									<h3>DJ Nano</h3>
+									<p>Estilo: Tecno-House</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/GOMAD&MONSTER.jpg">
+									<h3>Gomad&amp;Monster</h3>
+									<p>Estilo: Dubstep</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/KILLTHEHIPSTERS.jpg">
+									<h3>Kill The Hipsters</h3>
+									<p>Estilo: Electro-House</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/KOSTROK-B.jpg">
+									<h3>Kostrok</h3>
+									<p>Estilo: Progressive House</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/SUBMISSIONDJ.jpg">
+									<h3>Submission DJ</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/SANDRO-B.jpg">
+									<h3>Sandro</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/STILE.jpg">
+									<h3>Stile</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/REVERDJ.jpg">
+									<h3>Rever</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/HANGOVERSDJ.jpg">
+									<h3>Hangovers</h3>
+									<p>Estilo: EDM Comercial</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/main stage/BRIAN VAN ANDEL.jpg">
+									<h3>Brian Van Andel</h3>
+									<p>Estilo: EDM Comercial</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div data-role="collapsible" class="cornerstage">
+							<h2><span style="color:white;">CORNER STAGE</span></h2>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/corner stage/LORYMONEY.jpg">
+									<h3>Lory Money</h3>
+									<p>Estilo: Speaker</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/corner stage/MIGUEPACHANGA.jpg">
+									<h3>Migue Pachanga</h3>
+									<p>Estilo: Pachanga</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/corner stage/GERMANSALAZAR.jpg">
+									<h3>German Salazar</h3>
+									<p>Estilo: Musica Comercial</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/corner stage/FERCHOENERGY.jpg">
+									<h3>Fercho Energy</h3>
+									<p>Estilo: Comercial</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/corner stage/DJANGEL.jpg">
+									<h3>DJ Angel</h3>
+									<p>Estilo: Comercial</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/corner stage/DJANGEL.jpg">
+									<h3>Peter Loohan Piqueras</h3>
+									<p>Estilo: Pachanga</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div data-role="collapsible" class="edm">
+							<h2><span style="color:white;">EDM&amp;ELECTRONIC SHOWCASE</span></h2>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/edm&electronic/BELBRO.jpeg">
+									<h3>Bel.Bro</h3>
+									<p>Estilo: TecHouse/Tecno</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/edm&electronic/AARON GEHRIG.jpg">
+									<h3>Aaron Gehrig</h3>
+									<p>Estilo: TecHouse/Tecno</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/edm&electronic/RECHO.jpg">
+									<h3>Recho</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/edm&electronic/BLUEDUCKS.jpg">
+									<h3>Blueducks</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/edm&electronic/HOODKID.jpg">
+									<h3>Hoodkid</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/edm&electronic/RAULALTALAGUERRI.jpg">
+									<h3>Raul Altalaguerri</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/edm&electronic/BITTENNIPLES.jpg">
+									<h3>Bitten Nipples</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div data-role="collapsible" class="undergroundcar">
+							<h2><span style="color:white;">CAR NEW SOUNDS</span></h2>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/ANIMALDISASTER.jpg">
+									<h3>Animal Disaster</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/B2B 3HANDED.jpg">
+									<h3>3Handed</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/ALEXANDER RISE.jpg">
+									<h3>Alexandre Rise</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/HERBI.jpg">
+									<h3>Herbi</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/CARLMIKE.jpeg">
+									<h3>Carl Mike</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/IVANHERRERA.jpg">
+									<h3>Ivan Herrera</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/IDIEM.jpg">
+									<h3>Idiem</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/ANTIYOUTH.jpg">
+									<h3>Antiyouth</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+							<ul data-role="listview" data-icon="info" data-theme="a">
+								<li>
+									<a href="#">
+									<img src="jquery.mobile/images/underground car/LLORET.jpg">
+									<h3>Lloret</h3>
+									<p>Estilo: EDM</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+	
+				<div id="pie">
+						<p id="copyright">&copy; Copyright 2014 GroupDinamizadores</p>
+					</div>		  
+				</div>
+
+				
+				
+				</div>
+				</div>
+
+			</div>
+	<div data-role="footer" data-position="fixed" class="footer-docs" data-theme="b">
+		<p>&copy;Copyright 2014 GroupDinamizadores</p>
+	</div>
+  </body>
+  </html>

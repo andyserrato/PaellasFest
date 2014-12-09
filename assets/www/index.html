@@ -1,0 +1,98 @@
+﻿<!-- Copyright 2014 GroupDinamizadores-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1, width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=3, user-scalable=1"> -->
+    <title>PaellasFest!</title>
+
+ 	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="index.css" /> 
+	
+	
+	
+    <script src="jquery.mobile/jquery-1.7.2.min"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.2.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="index.js"></script>
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/countdown/jquery.countdown.css" />
+	<script src="assets/countdown/jquery.countdown.js"></script>
+	<script src="assets/js/script.js"></script>
+	
+
+  
+	<!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
+	<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+	<!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
+	<!-- Countdown dashboard end -->
+
+						<script language="javascript" type="text/javascript">
+							jQuery(document).ready(function() {
+								$('#countdown_dashboard').countDown({
+									targetDate: {
+										'day': 		30,
+										'month': 	4,
+										'year': 	2014,
+										'hour': 	10,
+										'min': 		0,
+										'sec': 		0
+									}
+								});
+								
+							});
+						</script>
+	</head>
+  
+  <body onload="init();">
+  	<div data-role="page" id="home" class="type-interior" data-theme="e">
+		<div data-role="header" data-theme="b" id="header">
+			<!-- <h1><span style="color:#7AC5E1">Paellas<span style="color:#DC9908">FEST!</span></h1> -->
+			<h1><img src="jquery.mobile/images/logoTopBarLetras.png" height="80%" width="35%"></h1>
+		</div>
+	
+	<div data-role="content" data-theme="c">	
+			
+			<div class="ui-grid-a" >
+			<h2>¡YA FALTA MENOS!</h2>
+				<div id="countdown"></div>
+			</div>
+			
+			
+			<div class="content-primary">
+
+					<div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="vista.html" data-role="button"  data-icon="comment" id="click-accelerometer" data-transition="slidefade" data-direction="reverse">Qué es PaellasFEST!</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">	
+						<a href="vista2.html" data-role="button" data-icon="star" id="click-camera" data-transition="slidefade" data-direction="reverse">Artistas</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="vista3.html" data-role="button" data-icon="tag" id="click-capture" data-transition="slidefade" data-direction="reverse">Pulseras</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="vista4.html" data-role="button" data-icon="location" id="click-compass" data-transition="slidefade" data-direction="reverse">Localización</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="vista6.html" data-role="button" data-icon="eye" id="click-feed" data-transition="slidefade" data-direction="reverse">Plano + Cartel</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="vista5.html" data-role="button" data-icon="info" id="click-connection" data-transition="slidefade" data-direction="reverse">Debes saber</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="vista7.html" data-role="button" data-icon="edit" id="click-connection" data-transition="slidefade" data-direction="reverse">Twitter</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="http://profesionales.tivenkia.com/clientes/519/0/0/ea99e7db5211e49a35588e1ef2fbf6e5" data-role="button" data-icon="action" id="click-connection" data-transition="slidefade" data-direction="reverse">Comprar entradas</a>
+						</div><div data-role="controlgroup" data-corners="true" data-theme="a" data-shadow="true">
+						<a href="https://www.youtube.com/watch?v=yvikbhY2QTw" data-role="button" data-icon="video" id="click-connection" data-transition="slidefade" data-direction="reverse">PaellasFEST! PROMO</a>
+					</div>
+
+		</div>
+		
+			<div id="pie">
+					
+						<p id="copyright">&copy; Copyright 2014 GroupDinamizadores</p>
+					</div>		    					
+		
+	</div>
+		
+  </body>
+</html>
